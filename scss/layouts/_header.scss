@@ -23,5 +23,22 @@
     gap: 64px;
     flex-grow: 1;
     justify-content: center;
+
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &__button {
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+    @media screen and (max-width: 1200px) {
+      display: block;
+    }
   }
 }

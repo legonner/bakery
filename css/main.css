@@ -226,6 +226,24 @@ ul {
   flex-grow: 1;
   justify-content: center;
 }
+@media screen and (max-width: 1200px) {
+  .header__menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header__button {
+    display: none;
+  }
+}
+.header__burger {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .header__burger {
+    display: block;
+  }
+}
 
 .hero-section {
   padding: 272px 0;
