@@ -28,11 +28,16 @@
           <button class="header__button button modal-btn-open" type="button">
             Замовити дзвінок
           </button>
-          <button class="header__burger" type="button">
+          <button class="header__burger menu-btn-open" type="button">
             <svg width="24" height="24">
               <use href="./images/icons-sprite.svg#icon-menu"></use>
             </svg>
           </button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -42,6 +47,12 @@
           <h1 class="hero-section__title">
             <span class="text-brand">Сучасна</span> пекарня
           </h1>
+          <button
+            class="hero-section__button button modal-btn-open"
+            type="button"
+          >
+            Замовити дзвінок
+          </button>
         </div>
       </section>
       <section class="advantages-section">
@@ -82,7 +93,11 @@
                 обслуговування!
               </p>
             </div>
-            <img src="./images/bread-maker.jpg" alt="bread-maker" />
+            <img
+              class="tradition-section__image"
+              src="./images/bread-maker.jpg"
+              alt="bread-maker"
+            />
           </div>
         </div>
       </section>
@@ -416,5 +431,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
