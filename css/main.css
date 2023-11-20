@@ -420,7 +420,7 @@ ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 50px;
 }
 @media screen and (min-width: 768px) {
   .chefs-section__list {
@@ -539,71 +539,69 @@ ul {
   background-size: cover;
   background-position: center;
 }
-
-.footer::before,
-.footer::after {
+.footer::before, .footer::after {
   position: absolute;
   bottom: 0;
   background-repeat: no-repeat;
   content: "";
 }
-
 .footer::before {
   width: 180px;
   height: 120px;
   left: 0;
   background-image: url("../images/decor-bread-small.png");
 }
-
 .footer::after {
   width: 380px;
   height: 190px;
   right: 0;
   background-image: url("../images/decor-bread-large.png");
 }
-
-.footer-container {
+.footer__container {
   display: flex;
+  flex-direction: column;
   gap: 20px;
 }
-
-.footer-nav,
-.footer-address {
+@media screen and (min-width: 768px) {
+  .footer__container {
+    flex-direction: row;
+  }
+}
+.footer__nav, .footer__address {
   display: flex;
-  flex-basis: 50%;
+  flex-direction: column;
   gap: 20px;
+  text-align: center;
 }
-
-.footer-logo,
-.footer-menu {
+@media screen and (min-width: 768px) {
+  .footer__nav, .footer__address {
+    flex-direction: row;
+    flex-basis: 50%;
+    text-align: left;
+  }
+}
+.footer__logo, .footer__menu {
   flex-grow: 1;
 }
-
-.address-list,
-.address-info {
+.footer__address-list, .footer__address-info {
   flex-grow: 1;
 }
-
-.adress-link {
+.footer__adress-link {
   color: var(--color-primary-light);
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
 }
-
-.adress-link:hover {
+.footer__adress-link:hover {
   color: var(--color-brand-normal);
 }
-
-.adress-icon {
+.footer__adress-icon {
   fill: var(--color-primary-light);
 }
-
-.adress-icon:hover {
+.footer__adress-icon:hover {
   fill: var(--color-brand-normal);
 }
-
-.adress-copyright {
+.footer__adress-copyright {
   font-size: 14px;
 }
 
@@ -632,7 +630,7 @@ ul {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 40px 0;
+  padding: 20px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -651,10 +649,15 @@ ul {
   max-width: 880px;
   height: 100%;
   max-height: 880px;
-  padding: 128px;
+  padding: 48px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
   overflow-y: auto;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    padding: 128px;
+  }
 }
 .modal__btn-close {
   position: absolute;
