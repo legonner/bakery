@@ -1,13 +1,14 @@
 'use strict';
 
-const getElement = (selector) => document.querySelector(selector);
+const getElement = selector => document.querySelector(selector);
 
 const backdrop = getElement('.backdrop'),
-      modalBtnOpen = getElement('.modal-btn-open'),
-      modalBtnClose = getElement('.modal-btn-close');
+  modalBtnOpenList = document.querySelectorAll('.modal-btn-open'),
+  modalBtnClose = getElement('.modal-btn-close');
 
 const toggleModal = () => backdrop.classList.toggle('is-hidden');
 
-modalBtnOpen.addEventListener('click', toggleModal);
+modalBtnOpenList.forEach(button =>
+  button.addEventListener('click', toggleModal),
+);
 modalBtnClose.addEventListener('click', toggleModal);
-
