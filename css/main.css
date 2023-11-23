@@ -678,6 +678,26 @@ ul {
 .modal__button {
   margin: 0 auto 24px;
 }
+.modal__title {
+  margin-bottom: 8px;
+}
+.modal__text {
+  margin-bottom: 72px;
+  color: var(--color-brand-dark);
+}
+.modal::after {
+  position: absolute;
+  bottom: 0;
+  background-repeat: no-repeat;
+  content: "";
+}
+.modal::after {
+  width: 240px;
+  height: 280px;
+  right: -50px;
+  top: 600px;
+  background-image: url("../images/bread-modal.png");
+}
 
 .section {
   padding: 20px 0;

@@ -50,4 +50,28 @@
   &__button {
     margin: 0 auto 24px;
   }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    margin-bottom: 72px;
+    color: var(--color-brand-dark);
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    content: '';
+  }
+
+  &::after {
+    width: 240px;
+    height: 280px;
+    right: -50px;
+    top: 600px;
+    background-image: url('../images/bread-modal.png');
+  }
 }
