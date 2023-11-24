@@ -58,6 +58,12 @@
     flex-grow: 1;
   }
 
+  &__menu li:not(:last-child),
+  &__address-contacts li,
+  &__address-info a {
+    padding-bottom: 16px;
+  }
+
   &__address-list,
   &__address-info {
     flex-grow: 1;
@@ -74,6 +80,11 @@
     color: var(--color-brand-normal);
   }
 
+  &__adress-social {
+    display: flex;
+    gap: 22px;
+  }
+
   &__adress-icon {
     fill: var(--color-primary-light);
   }
@@ -83,6 +94,7 @@
   }
 
   &__adress-copyright {
+    color: var(--color-secondary-dark);
     font-size: 14px;
   }
 }

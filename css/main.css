@@ -37,6 +37,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--color-primary-light);
   color: var(--color-primary-dark);
@@ -583,6 +587,9 @@ ul {
 .footer__logo, .footer__menu {
   flex-grow: 1;
 }
+.footer__menu li:not(:last-child), .footer__address-contacts li, .footer__address-info a {
+  padding-bottom: 16px;
+}
 .footer__address-list, .footer__address-info {
   flex-grow: 1;
 }
@@ -595,6 +602,10 @@ ul {
 .footer__adress-link:hover {
   color: var(--color-brand-normal);
 }
+.footer__adress-social {
+  display: flex;
+  gap: 22px;
+}
 .footer__adress-icon {
   fill: var(--color-primary-light);
 }
@@ -602,6 +613,7 @@ ul {
   fill: var(--color-brand-normal);
 }
 .footer__adress-copyright {
+  color: var(--color-secondary-dark);
   font-size: 14px;
 }
 
